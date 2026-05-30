@@ -1,0 +1,11 @@
+# Ignore artifacts:
+build
+coverage
+.output
+.tanstack
+node_modules
+.prettierrc
+docker-compose.yml
+package.json
+tsconfig.json
+src/routeTree.gen.ts
