@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build"
+    "build": "vite build",
+    "start": "node .output/server/index.mjs"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/react-router": "^1.170.10",
     "@tanstack/react-start": "^1.168.17",
+    "nitro": "^3.0.260522-beta",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "tailwindcss": "^4.3.0"

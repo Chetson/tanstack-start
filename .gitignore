@@ -1,3 +1,5 @@
 /node_modules
 .tanstack
 package-lock.json
+dist
+.output

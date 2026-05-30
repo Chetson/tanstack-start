@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.gitignore
+.env.local
+Dockerfile
+.dockerignore
+.tanstack
+README.md
+LICENSE.md
