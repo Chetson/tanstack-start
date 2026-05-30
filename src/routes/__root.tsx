@@ -6,6 +6,7 @@ import {
 	Outlet,
 	Scripts,
 } from '@tanstack/react-router'
+import { ErrorComponent } from '../components/ErrorComponent'
 
 import appCss from '../app.css?url'
 
@@ -23,9 +24,13 @@ export const Route = createRootRoute({
 				title: 'TanStack Start Starter',
 			},
 		],
-		links: [{ rel: 'stylesheet', href: appCss }],
+		links: [
+			{ rel: 'stylesheet', href: appCss },
+			{ rel: 'icon', href: '/favicon.svg' },
+		],
 	}),
 	component: RootComponent,
+	errorComponent: ErrorComponent,
 })
 
 function RootComponent() {
@@ -42,7 +47,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 			<head>
 				<HeadContent />
 			</head>
-			<body>
+			<body cz-shortcut-listen="true">
 				{children}
 				<Scripts />
 			</body>
